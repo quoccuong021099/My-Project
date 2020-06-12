@@ -1,0 +1,63 @@
+.tong{
+    margin: auto;
+    width: 355px;
+    height: 665px;
+    background-color: cornflowerblue;
+    position: relative;
+}
+.include{
+    text-align: center;
+    position: relative;
+}
+p{  margin-bottom: 50px;
+    width: 255px;
+    height: 25px;   
+    font-size: 15px;
+    padding-left: 50px;
+}
+.tong button{
+    font-size: 30px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    border: none;
+}
+.menu{
+    position: absolute;
+}
+.OVER{ 
+    height: 665px;
+    width: 355px;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 0px;
+}
+.tong .menu ul{
+    position: relative;
+    background-color: grey;
+    display: none;
+    z-index: 2;
+    height: 665px;
+    width: 280px;
+    margin-top: 0px;
+
+}
+ ul a{
+    padding: 10px 24px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: indigo;
+    font-size: 25px;
+    background-color: brown;
+    margin-top: 46px;
+}
+.bao{
+    padding: 4px 10px;  
+    padding-top: 27px;
+    padding-left: 0px;
+    padding-right: 35px;
+
+    
+}

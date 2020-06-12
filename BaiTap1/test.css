@@ -1,0 +1,95 @@
+
+.post-list{
+    width: 278px;
+    height: 623px;
+    margin: auto;
+    background-color: #E8F0F2;
+     position: relative;
+}
+#icon{
+    border: none;
+    background-color:#E8F0F2 ;
+    cursor: pointer;
+}
+h1{   
+    text-align: center;
+    font-size: 50px;
+}
+.doc{    
+    text-align: center;
+    font-size: 20px;    
+}
+.doc2{    
+    text-align: center;
+    font-size: 15px;
+    
+}
+img{    
+    padding-left: 10px;
+    
+}
+
+.text{
+    text-align: center;
+}
+
+.menu{    
+   position: absolute;
+}
+
+ul{
+    background-color: #354750;
+    z-index: 2;
+    height: 623px;
+    width: 200px;
+    margin-top: -50px;
+    position: relative;
+    display: none;
+    
+}
+.over{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    display: block; 
+    top: 0px; 
+    height: 623px; 
+    width: 277px;
+}
+ul a{    
+    padding: 4px 10px;
+    background-color: #FFAB00;
+    display: block;
+    margin-top: 50px;
+    margin-right: 35px;
+    text-decoration: none;
+    text-align: center;
+    color: indigo;
+    font-size: 25px;
+}
+.backgrd{
+    position: relative;
+}
+.bao{
+    padding: 4px 10px;
+    margin-top: 50px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    background-color:#E8F0F2;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    padding: 4px;
+    margin-top: -62px;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold   ;
+
+     border: none;
+  }
+    .next {
+        right: 0;
+      }
+    

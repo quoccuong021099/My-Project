@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"   integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="shopify.css">
+    <title>Shopify</title>
+</head>
+<body>
+    <div class="mobile-Screen bgr"><!-- navbar -->
+        <div class="layer-menu" onclick="closeSidebar()" id="mySidebar"></div>
+        <div id="myOverlay" class="view-sidebar bgr">
+            <div class="header">
+                <img class="icon" src="/img/photo1.png" alt="tui xach">
+                <i class="shopify">shopify</i>
+                <button class="fas fa-times button-siderba bgr" onclick="closeSidebar()"></button>
+            </div>
+            <div class="siderba-all">
+                <button class="button-list bgr"> Start <i class="fas fa-chevron-down"></i></button>
+                <button class="button-list bgr"> Sell <i class="fas fa-chevron-down"></i></button>
+                <button class="button-list bgr"> Market <i class="fas fa-chevron-down"></i></button>
+                <button class="button-list bgr "> Manage <i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="siderba-all">
+                <p class="para">Pricing</p>
+                <button class="button-list bgr">Learn
+                    <i class="fas fa-chevron-up" id="up" onclick="closeLearn()"></i>
+                    <i class="fas fa-chevron-down" id="down" onclick="openLearn()"></i>
+                </button>
+                <div class="border-left" id="listLearn">
+                    <p class="para">Help Center</p>
+                    <p class="para">Blog</p>
+                    <p class="para">Academy</p>
+                    <p class="para">Guides</p>
+                    <p class="para">Forums</p>
+                    <p class="para">Free tools</p>
+                    <p class="para">Podcasts</p>
+                    <p class="para">Business encyclopedia</p>
+                </div>
+                <p class="para">Log in<p>
+                <button class="button-free-menu">Start free trial</button>
+            </div>          
+                <p class="para"> About </p>
+                <p class="para"> Careers</p>
+                <p class="para"> Press and Media</p>
+                <p class="para"> Shopify Plus </p>
+                <p class="para"> Sitemap </p>           
+        </div>
+<!-- end navbar -->
+<!-- backgound part-one -->
+        <div class="part-one">
+            <div class="header">
+                <img class="icon" src="/img/photo1.png" alt="tui xach">
+                <i class="shopify"> shopify</i>
+                <button class="fas fa-grip-lines button-Menu" onclick="openSidebar()"></button>
+            </div>
+            <h1 class="heading-1">Build your business</h1>
+            <p class="text-Center ">You’ve got the will. We’ve got the way.</p>
+            <input class="input-Button " placeholder="    Enter your email address">
+            <button class="input-Button button-Start ">Start free trail</button>
+            <p class="text-Center para-1">Due to the impact of COVID-19, Shopify is offering  an extended 90-day free trial. By entering your email, you agree to receive marketing emails from Shopify.</p>
+            <img src="/img/photo2.jpg" class="photo1" >
+            <img src="/img/photo4.jpg" class="photo2" >
+            <img src="img/photo3.png" class="photo3" >
+        </div>
+<!-- end background part-one -->
+        <div class="part-two">
+            <h2 class="text-Center">With you from first sale to full scale</h2>
+            <p class="text-Center para-2">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+<!-- start -->
+            <h3 class="heading-3"> <div class="para-3">Start —</div> your business journey </h3>
+            <p class="para-4">Find a business name, buy a domain, and create a brand with our free tools.</p>
+            <a href="#" class="link">Explore tools to start your business<i class="fas fa-arrow-right"></i></a>
+            <img class="img-Start margintop-50" src="/img/start.PNG" alt="">
+<!-- end Start -->
+<!-- Sell -->
+            <h3 class="heading-3"> <div class="para-3">Sell —</div> everywhere</h3>
+            <p class="para-4">Use one platform to sell products to anyone, anywhere—online with your ecommerce store, online marketplaces,and social media, and in-person with point of sale</p>
+            <a href="#" class="link">Explore ways to sell<i class="fas fa-arrow-right"></i></a>
+            <div class="interface-button">
+                <button class="buttonleft" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></button>
+                <button class="buttonright" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></button>
+                <img class="slides margintop-50" src="/img/page5.jpg" >
+                <img class="slides margintop-50" src="/img/page6.jpg" >
+                <img class="slides margintop-50" src="/img/page7.jpg" >
+                <img class="slides margintop-50" src="/img/page8.jpg" >
+                <img class="slides margintop-50" src="/img/page9.jpg" >
+            </div>
+<!-- end sell -->
+<!-- market -->
+            <h3 class="heading-3"> <div class="para-3">Market —</div>your business </h3>
+            <p class="para-4">Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze campaigns on Facebook and Google.</p>
+            <a href="#" class="link">Explore how to market your business<i class="fas fa-arrow-right"></i></a>
+            <div class="img-Market">
+                <img class="slidess1 absolute" src="/img/page11.PNG" alt="#">
+                <img class="slidess2 " src="/img/page12.jpg" alt="#">
+                <img class="slidess3 absolute" src="/img/page12.PNG" alt="#">
+            </div>
+<!-- end maket -->
+<!-- manage -->
+            <h3 class="heading-3"> <div class="para-3">Manage —</div> everything </h3>
+            <p class="para-4">Use a single dashboard to manage orders,shipping, and payments anywhere you go. Gain the insights and knowledge you need to grow.</p>
+            <a href="#" class="link">Explore how to manage your business<i class="fas fa-arrow-right"></i></a>
+            <img class="width-100 margintop-50" src="/img/manage.PNG" alt="#">
+<!-- end manage -->
+<!-- contact -->
+            <div class="text-Center">
+                <img class="width-100 margintop-50" src="/img/contact.PNG" alt="#">
+                <h3 class=" contact"> Award-winning support</h3>
+                <p class="para-4">Get the help you need, day or night, 24/7.</p>
+                <a href="#" class="link">Contact support<i class="fas fa-arrow-right"></i></a>
+<!-- end contact -->
+<!-- store -->
+                <img class="width-100 margintop-50" src="/img/store.PNG" alt="#">
+                <h3 class="contact"> Shopify App Store</h3>
+                <p class="para-4">Add features and functionality to your business with 3,200+ apps that integrate directly with Shopify.</p>
+                <a href="#" class="link">Visit the Shopify App Store<i class="fas fa-arrow-right"></i></a>
+<!-- end store -->
+<!-- experts -->
+                <img class="width-100 margintop-50" src="/img/Experts.PNG" alt="#">
+                <h3 class="contact"> Shopify Experts</h3>
+                <p class="para-4">Hire a Shopify Expert to help you with everything from store setup to SEO.</p>
+                <a href="#" class="link">Explore Shopify Experts<i class="fas fa-arrow-right"></i></a>
+            </div>
+<!-- end experts -->
+            <h2 class="Business ">Empowering independent business owners everywhere</h2>
+            <p class="para-two">Over <strong>1,000,000 businesses</strong>in <strong>175 countries</strong> have made    more than <strong>$155 billion USD</strong> in sales on Shopify.</p>
+            <a href="#" class="link">Learn more about Shopify<i class="fas fa-arrow-right"></i></a>
+            <img class="width-100 margintop-50" src="/img/wold.PNG" alt="">
+            <button class="fas fa-pause"></button>
+            <p class="para-4">The orders in this map do not reflect live results, but are generated from a simulation of the last reported quarter’s orders.</p>
+            <div class="green">
+                <img src="/img/people.PNG" class="img-people" alt="#">
+                <div class="green-2">
+                    <p class="text-green">“We’ve been able to build something in 3 years that a lot of brands haven’t actually gotten to in 10 years.”</p>
+                    <img class="img-green" src="/img/logo1.webp" alt="#">
+                    <p>Chioma | Cee Cee’s Closet NYC</p>
+                        <button class="button-green">
+                            <i class="fas fa-play"></i>
+                            Play Chioma and Uchenna’s story
+                        </button>
+                </div>
+            </div>
+            <div class="logo">
+                <img class="logo-all" src="/img/logo2.webp">
+                <img class="logo-all" src="/img/logo3.webp">
+                <img class="logo-all" src="/img/logo4.webp">
+                <img class="logo-all" src="/img/logo5.webp">
+                <img class="logo-all" src="/img/logo6.webp">
+                <img class="logo-all" src="/img/logo7.webp">
+                <img class="logo-all" src="/img/logo8.webp">
+                <img class="logo-all" src="/img/logo9.webp">
+            </div>
+            <div class="text-Center">
+                <h3 class="contact"> Start your business journey with Shopify</h3>
+                <p class="para-4">Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.</p>
+                <button class="button-bottom">Start free trial</button>
+            </div>
+        </div>
+<!--end part two -->
+    </div>
+<script src="shopify.js"></script>
+</body>
+</html>

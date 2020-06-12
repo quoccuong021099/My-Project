@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div class="tong">
+
+        <div class="menu">
+            <ul id="mySidebar">
+                <div class="bao">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    </div>
+                
+            </ul>
+            <div class="OVER" onclick="clos()" id="myOverlay">
+            </div>
+        </div>
+        
+        <button onclick="ope()"><i class="fas fa-grip-lines fas-2x"></i></button>
+
+        <div class="include">
+            <h1>Creative</h1>
+            <p>Nếu muốn có những thứ không bao giờ có Thì hãy làm những điều mình không bao giờ làm.</p>
+            <img src="qc.jpg" alt="Ảnh Quốc Cường" style="width: 263px; height: 360px;">
+            <p>Yêu để trường thành, chứ không phải ngu muội.</p>
+        </div>
+
+    </div>
+
+
+
+    
+  
+
+
+<script>
+    function clos(){
+        document.getElementById("mySidebar").style.display="none";
+        document.getElementById("myOverlay").style.display="none";
+    }
+    
+    function ope(){
+        document.getElementById("mySidebar").style.display="block";
+        document.getElementById("myOverlay").style.display="block";
+    }
+</script>
+
+</body>
+</html>

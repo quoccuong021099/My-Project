@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="all">
+        <button id="btn" onclick="ope()"><i class="fas fa-grip-lines fa-2x "></i></button>
+        <div id="opentag">
+            <div class="avatar">
+                <img src="img/meo.jpg" alt="avatar">
+                <button id="close_tag" onclick="clos()" class="fa fa-ellipsis-v fa-2x"></button>
+            </div>
+            <p class="name">Ranchel Green</p>
+            <div class="post">
+                <p class="app1">App Layout</p>
+                <p class="app2">DARK ROLODEX</p>
+            </div>
+            <div class="icons">
+                <i class="fa fa-book "></i>
+                <i class="fa fa-th-large "></i>
+                <i class="fa fa-bars "></i>
+            </div>
+            <div class="post">
+                <p class="app1">My Contacts</p>
+                <p class="app2">218</p>
+            </div>
+        <div class="all_contacts">
+            <div class="contact">
+                <img src="img/600px-Facebook-icon-1.png" >
+                <p>Connect </p>
+                <p>>>></p>
+            </div>
+            <div class="contact">
+                <img src="img/unnamed.png" >
+                <p>Connect </p>
+                <p>>>></p>
+            </div>
+            <div class="contact_tw">
+                    <i class="far fa-comments"></i>
+                    <p class="number">218</p>
+                <img src="img/tw.png" >
+            </div>
+            <div class="contact">
+                <img src="img/InternetNZ_Icons_v1.0-05.png" >
+                <p>Connect </p>
+                <p>>>></p>
+            </div>
+            <div class="contact">
+                <img src="img/my-contacts-backup-for-ios.jpg" >
+                <p>Connect </p>
+                <p>>>></p>
+            </div>
+        </div>    
+        </div>
+        <h1 class="heading head1">Inspiration</h1>
+        <p class="heading head2">Everything you can imagine is real.</p>
+            <div class="mySlides"><img src="img/ca-nha-tang.jpg"></div>
+            <div class="mySlides"><img src="img/hoa-anh-dao.jpg"></div>
+            <div class="mySlides"><img src="img/hoa-huong-duong.png"></div>
+            <div class="mySlides"><img src="img/trai-tim.jpg"></div>
+            <div class="mySlides"><img src="img/oc-sen.jpg"></div>
+            <div class="mySlides"><img src="img/thien-nhien.jpg"></div>
+        <button class="fa fa-arrow-left left fa-2x " id="prev" onClick="plus(-1)" ></button>
+		<button class="fa fa-arrow-right right fa-2x" id="next" onClick="plus(1)"></button>
+        <h4 class="heading">0<a id="slide">1</a><i> / </i> 06</h4>
+        <p class="heading head3">The history of fashion design refers specifically to the development of the purpose and intention behind.</p>
+    </div>
+<script>
+       //Mo Menu
+       function ope(){
+           document.getElementById("opentag").style.display="block";
+       }
+       function clos(){
+           document.getElementById("opentag").style.display="none";
+       }
+        // Slide ảnh
+       var a = 1;
+		show(a);
+		function plus(n){
+			show(a += n);
+			document.getElementById("slide").innerHTML = a; // đếm số
+		}
+		function show(n){
+			var i;
+			var x=document.getElementsByClassName("mySlides");
+			if(n>x.length-1)
+				document.getElementById("next").style.display="none";
+			else
+			 	document.getElementById("next").style.display="block";
+			if(n===1)
+			 	document.getElementById("prev").style.display="none";
+			else
+			 	document.getElementById("prev").style.display="block";
+			for(i=0;i<x.length; i++){
+			 	x[i].style.display="none";
+			}
+			x[a-1].style.display="block";
+		}
+</script>
+</body>
+</html>

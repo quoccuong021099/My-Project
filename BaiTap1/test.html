@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body >
+<div class="post-list"  >    
+    <div class="menu"  >
+        
+        <ul id="mySidebar">     
+            
+            <div class="bao">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            </div>
+                 
+        </ul>
+        <div class="over" onclick="closer()" id="myOverlay"> </div>
+    </div>
+    
+        
+            <button id="icon"class="fas fa-grip-lines fa-2x" onclick="opener()"></button> 
+        <div class="backgrd" >   
+            <h1 >Inspiration</h1>
+            <p class="doc">Everything you can <br> imagine is real.<p>
+     
+            
+            <!-- slide  -->
+    <div class="slideshow">
+
+    <div class="mySlides ">
+      <img src="tải xuống.jpg">
+      <div class="text">01 / 06</div>
+    </div>    
+    <div class="mySlides ">
+      <img src="di-bo-shuterstock_evom.jpg" style="width: 259px; height: 194px;">
+      <div class="text">02 / 06</div>
+    </div>
+    <div class="mySlides " >
+      <img src="images (1).png"  style="width: 259px; height: 194px;">
+      <div class="text">03 / 06</div>
+    </div>
+    <div class="mySlides " >
+      <img src="images.jpg" style="width: 259px; height: 194px;">
+      <div class="text">04 / 06</div>
+    </div>
+    <div class="mySlides ">
+      <img src="tải xuống (1).jpg" style="width: 259px; height: 194px;">
+      <div class="text">05 / 06</div>
+    </div>
+    <div class="mySlides " >
+      <img src="stick_figure_chosen_from_many_md_wm.jpg" style="width: 259px; height: 194px;">
+      <div class="text">06 / 06</div>
+    </div>
+    
+    
+    <button class="prev"  onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></button>
+    <button class="next" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></button>
+    </div>
+    <!-- end of slide -->
+
+   
+   
+   
+    <p class="doc2" >The history of fashion design  refers <br> specifically to the  development of the <br> purpose and intention behind.</p>
+        </div>
+   
+</div> 
+   
+   
+   
+<script>
+ var slideId = 1;
+        showSlides(slideId);
+        
+ function plusSlides(n) {
+          showSlides(slideId += n);
+        }
+        
+function currentSlide(n) {
+          showSlides(slideId = n);
+        }
+        
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+
+  if (n > slides.length) 
+  {
+    slideId = slides.length;
+    document.getElementsByClassName("prev")[0].style.display="block";
+    document.getElementsByClassName("next")[0].style.display="none";
+
+  }    
+  if (n===6)
+  document.getElementsByClassName("next")[0].style.display="none";
+  if (n===1)
+  document.getElementsByClassName("prev")[0].style.display="none";
+
+  if (n < 1) 
+  {
+      slideId = 1;
+      document.getElementsByClassName("next")[0].style.display="block";
+      document.getElementsByClassName("prev")[0].style.display="none";
+
+  }
+
+
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideId-1].style.display = "block";  
+}
+
+function opener() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+function closer() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+</body>
+</html>

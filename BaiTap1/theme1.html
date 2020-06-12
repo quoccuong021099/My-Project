@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="bai2ac.css">
+</head>
+<body>
+ <section>
+<div class="post-list">   
+        <!-- sidebar -->
+        <div class="menu">
+            <nav>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">House</a></li>
+                <li><a href="#">He</a></li>
+                <li><a href="#">Here</a></li>
+                 </ul>
+                 <div class="over" id="myOverlay" onclick="clos()"></div>
+            </nav>
+            
+        <button class="btn" id="myButton" onclick="ope()"  ><i class=" fas fa-grip-lines fa-2x"></i></button> 
+        </div>   
+        
+        <div class="total">
+        <h1>Creative</h1>
+        <p class="doc">Everything you can imagine is real.</p>
+        <img src="Capture.PNG" >            
+        <p class="end1">The history of fashion design  refers <br> specifically to the  development of the <br> purpose and intention behind.</p>
+        <button class="end2">FIND OUT MORE</button> 
+        </div>
+               
+    
+</div>
+ </section>   
+ <script>
+    function ope() {
+    
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function clos() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+  
+</body>
+</html>

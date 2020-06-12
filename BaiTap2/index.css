@@ -1,0 +1,125 @@
+body{
+    background: #E7F0F3;
+    padding: 0; margin: 0; 
+    font-family: 'Roboto';
+}
+.all{
+    width: 358px;
+    height: 680px;
+    background: #F8E0E6;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+#btn{
+    background-color: #F8E0E6; 
+    border: none; 
+    margin:15px 0px 0px 15px;}
+.but{cursor: pointer;}
+.heading{text-align: center;}
+.head2{font-size: 20px;}
+.head3{font-size: 20px; margin-top: 40px;}
+.mySlides img{
+    width: 300px;
+    height: 240px;
+    margin-left: 29px;
+}
+.left, .right{
+    position: absolute;
+    top: 0;
+    margin-top: 165px;
+    margin-left: 30px;
+    border: 0;  padding: 0;
+    width: 30px;
+    opacity: 0.5;
+    border-radius: 100%;
+}
+.right{
+    margin-left: 300px;
+}
+#opentag{
+    background-color: #fff;
+    width: 80%;
+    height: 650px;
+    top: 0;
+    z-index: 3; 
+    position: absolute;
+    display: none;
+    padding: 15px;
+}
+.avatar{
+    display: flex;
+	justify-content: space-between;
+}
+.avatar img{
+	width: 100px;
+    height: 100px;
+    border-radius:50% ;
+}
+#close_tag{
+    background-color: #fff; 
+    border: none;
+    color: #F5A9F2;    
+}
+.name{font-size: 25px;}
+.post{display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.app1{ color: #848484; font-weight: bold;}
+.app2{color: #2E64FE;font-weight: bold;}
+.icons{
+    margin: 0 auto;
+    background-color: #eaeef9;
+    height: 70px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.icons i{
+   color: #BDBDBD; font-size: 20px;
+   width: 60px;
+   height: 60px;
+   margin: auto 0; 
+   border-radius: 10px;
+   display: flex;    
+   align-items:center;
+   justify-content: space-around;
+}
+.icons i:hover{
+    background-color: #034BEB;
+}
+.contact{
+    margin: 10px auto;
+    display: flex;
+    width: 80%;
+    height: 50px;
+    background-color: #EEF5FD;
+    border-radius: 50px;
+    justify-content: space-evenly;
+}
+.contact_tw{
+    margin: 10px auto;
+    display: flex;
+    width: 80%;
+    height: 50px;
+    background-color: #2E9AFE;
+    border-radius: 50px;
+    justify-content: space-around ;
+}
+.contact_tw img{
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 100px;
+}
+.number{margin-left: 0px;}
+.contact_tw i{margin-left: 20px; margin-top: 20px;}
+.contact img{
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    margin: 5px -30px;}
