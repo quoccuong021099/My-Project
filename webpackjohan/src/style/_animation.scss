@@ -1,0 +1,63 @@
+.li-nav2:hover .second-menu {
+  display: block;
+  animation: aahihi 0.5s ease-in-out;
+}
+@keyframes aahihi {
+  from {
+    left: 1000px;
+    background-color: green;
+  }
+
+  to {
+    transform: rotate(20turn);
+  }
+}
+
+.li-nav:hover .first-menu {
+  display: block;
+  animation: ahihi 0.5s ease-in-out;
+}
+@keyframes ahihi {
+  from {
+    top: 1000px;
+    background-color: green;
+  }
+  to {
+    transform: rotate(20turn);
+    background-color: blue;
+  }
+}
+@keyframes aah {
+  from {
+    top: 1000px;
+    background-color: green;
+  }
+  to {
+    transform: rotate(20turn);
+    background-color: blue;
+  }
+}
+#logo:hover {
+  animation: aah 0.5s ease-in;
+}
+.img-first:hover {
+  animation: aah 0.5s ease-in infinite;
+}
+span:hover{
+  animation: ee 1s ease-in-out  infinite;
+}
+@keyframes ee{
+  from{background-color: #fff;}
+  50%{ background-color: red;}
+  to{ background-color: green;}
+}
+.setup:hover{
+  animation: ee1 1s ease-in-out  infinite;
+
+}
+@keyframes ee1{
+  from{background-color: red;}
+
+  to{ transform: rotate(-5turn);
+  background-color: green;}
+}

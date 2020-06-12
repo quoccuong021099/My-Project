@@ -1,0 +1,58 @@
+@mixin displa($dp, $fl) {
+  #{$dp}: $fl;
+}
+@mixin head-head {
+  @include flex-between;
+  align-items: $cen;
+  padding: 20px 350px;
+}
+@mixin flex-between {
+  @include displa(display, flex);
+  justify-content: space-between;
+}
+@mixin header-header {
+  position: $fix;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: $bg;
+  box-shadow: 0px 1px 1px rgba(223, 222, 222, 0.5);
+}
+@mixin first-menu-first-menu {
+  @include displa(display, none);
+  position: $ab;
+  top: 40px;
+  left: 0;
+  width: 150px;
+  padding: 20px;
+  background-color: $bg;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+@mixin second-menu-second-menu {
+  @include displa(display, none);
+  position: $ab;
+  color: black;
+  z-index: 2;
+  top: 0px;
+  left: 170px;
+  width: 150px;
+  padding: 20px;
+  background-color: $bg;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+@mixin first-main-first-main {
+  @include displa(display, $fle);
+  justify-content: $sp-ar;
+  margin: 200px auto 0px;
+  padding: 0 350px;
+  align-items: $cen;
+}
+%first-main {
+    display: flex;
+    justify-content: space-around;
+    margin: 200px auto 0px;
+    padding: 0 350px;
+    align-items: center;
+  }
+  

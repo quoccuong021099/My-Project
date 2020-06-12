@@ -1,0 +1,379 @@
+@import "li";
+@import "variables";
+@import "mixin";
+@import "placehoder";
+@import "reponsive";
+@import "mobile";
+@import "resetcss";
+@import "animation";
+header {
+  @include header-header;
+  .head {
+    @include Responsive(MD) {
+      padding: 20px;
+    }
+    @include Responsive(MD) {
+      padding: 20px;
+    }
+    @include head-head;
+    .tag_menu-right {
+      @include flex-between;
+      #tag_menu {
+        @include Responsive(SM) {
+          display: none;
+        }
+        @include flex-between;
+        .li-nav {
+          position: $rela;
+          padding: 0px 10px;
+          .hover-red {
+            color: $cl;
+          }
+          .first-menu {
+            @include first-menu-first-menu;
+            .li-nav2 {
+              position: $rela;
+              .second-menu {
+                @include second-menu-second-menu;
+              }
+            }
+            .li-nav2:hover {
+              display: $bl;
+            }
+            .li-nav2:hover .second-menu {
+              display: block;
+            }
+          }
+          .flex-space:hover {
+            color: $cl;
+            
+          }
+        }
+        .li-nav:hover .first-menu {
+          display: $bl;
+        }
+      }
+    }
+  }
+}
+.left-3rd{
+  @include Responsive(XS){
+    display: block;
+    margin-left: 25px;
+  }
+}
+#logo{
+  @include Responsive(SM){
+    width:  120px;
+  }
+}
+.img-first {
+  @include Responsive(MD) {
+    width: 500px;
+  }
+  @include Responsive(SM) {
+    width: 350px;
+  }
+}
+.first-main {
+  @include Responsive(MD) {
+    padding: 20px;
+  }
+  @include Responsive(SM) {
+    margin-top: 90px;
+    padding: 10px;
+  }
+  @include Responsive(XS) {
+    flex-wrap: wrap;
+  }
+  @extend %first-main;
+  img {
+    width: 100%;
+    border-radius: 63% 37% 50% 50%/70% 68% 32% 30%;
+  }
+  .word-right {
+    margin-left: 50px;
+    .heading-1 {
+      @include Responsive(MD) {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      @include Responsive(SM) {
+        margin: 20px 0px;
+        font-size: 40px;
+        line-height: 40px;
+      }
+      @include Responsive(SM) {
+        margin: 20px 0px;
+    font-size: 35px;
+    line-height: 40px;
+      }
+      @extend %heading-1;
+    }
+    .para {
+      @include Responsive(XS){
+        font-size: 18px;
+        line-height: 25px;
+      }
+      @extend %para;
+    }
+    .find {
+      @extend %find;
+    }
+  }
+}
+.heading1 {
+  @include Responsive(SM) {
+    font-size: 35px;
+    line-height: 100px;
+  }
+  @include Responsive(XS) {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  @extend %heading1;
+}
+.second-main {
+  position: relative;
+
+  .red-dash {
+    @extend %red-dash;
+  }
+
+}
+.all-slide {
+  @extend %all-slide;
+}
+.photo-slider {
+  @extend %photo-slider;
+}
+.picture {
+  @include Responsive(SM){
+    padding: 10px;
+  }
+  @include Responsive(XS){
+    padding: 10px 80px;
+  }
+  @extend %picture;
+}
+.photo {
+  @extend %photo;
+}
+.btn-arrow {
+  @extend %btn-arrow;
+}
+.prev {
+  @include Responsive(MD) {
+    padding: 0px 100px;
+  }
+  @include Responsive(SM) {
+    padding: 200px;
+  }
+  @include Responsive(XS) {
+    padding: 50px;
+  }
+  @extend %prev;
+}
+.menu-small{
+  @include Responsive(SM){   
+      display: block;
+    
+  }
+}
+// 3rd main
+.main-3rd {
+  @include Responsive(MD) {
+    padding: 20px;
+  }
+  @include Responsive(SM) {
+    display: flex;
+    flex-direction: column;
+  }
+  @extend %main-3rd;
+}
+.over-view {
+  @include Responsive(MD) {
+    width: 600px;
+  }
+  @include Responsive(SD) {
+    width: 725px;
+  }
+  @include Responsive(XS) {
+    width: 400px;
+  }
+
+  @extend %over-view;
+}
+.img-view {
+  @include Responsive(MD) {
+    width: 600px;
+  }
+  @include Responsive(SM) {
+    width: 725px;
+  }
+  @include Responsive(XS) {
+    width: 400px;
+  }
+  @extend %img-view;
+}
+
+.explain {
+  @include Responsive(MD) {
+    padding: 50px;
+  }
+  @include Responsive(XS) {
+    
+    padding: 20px 0px;
+    width: 400px;
+  }
+}
+.btn-moti {
+  @include Responsive(MD) {
+    background-color: red;
+    border: none;
+    padding: 15px;
+    color: #fff;
+  }
+  @extend %btn-moti;
+}
+.by {
+  color: $cl1;
+}
+.name {
+  color: $cl;
+}
+.name:hover {
+  color: $cl1;
+}
+.btn-finish {
+  @include Responsive(MD) {
+    margin-bottom: 0px;
+  }
+  @extend %btn-finish;
+}
+.btn-left-finish {
+  @include Responsive(MD) {
+    left: 35px;
+  }
+  @extend %btn-left-finish;
+}
+.btn-right-finish {
+  @include Responsive(MD) {
+    right: 35px;
+  }
+  @extend %btn-right-finish;
+}
+.btn-left-finish,
+.btn-right-finish {
+  @extend %both;
+}
+// note
+/* note right */
+.note-right{
+  @include Responsive(SM){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+  @include Responsive(XS){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.newsletter {
+  @include Responsive(MD) {
+    margin-left: 30px;
+  }
+  @include Responsive(SM) {
+    margin-top: 100px;
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+  }
+  @extend %newsletter;
+}
+.gom {
+  @include Responsive(SM) {
+    box-sizing: border-box;
+    height: 800px;
+  }
+}
+.news {
+  margin-bottom: 20px;
+}
+.para-new {
+  line-height: 30px;
+}
+input {
+  @extend %input;
+}
+.btn-subscribe {
+  @extend %btn-subscribe;
+}
+.para-topic {
+  line-height: 35px;
+}
+.ha {
+  background-color: #424851;
+  color: $bg;
+}
+.ic {
+  @extend %ic;
+}
+.auto {
+  @include Responsive(SM){
+    padding: 0px;
+  }
+  padding: 20px;
+}
+/* end of note right */
+
+footer {
+  @extend %footer;
+}
+.ft {
+  @include Responsive(SM){
+    flex-direction: column;
+  }
+  @extend %ft;
+}
+.ft11 {
+  @include Responsive(SM){
+    width: 85%;
+    justify-content: space-between;
+  }
+  @include Responsive(XS){
+    flex-direction: column;
+  }
+  @extend %ft11;
+}
+.ft111 > p {
+  padding: 20px 0px;
+}
+.footer {
+  border-top: 0.5px solid #f2f3f3;
+  text-align: center;
+  @include Responsive(XS){
+    padding: 20px;
+    font-size: 15px;
+  }
+}
+.ft111 > img {
+  @extend %ft111;
+}
+.ft111{
+  @include Responsive(SM){
+    margin-top: 30px;
+  }
+}
+#myBtn {
+  @extend %myBtn;
+}
+.setup {
+  @include Responsive(SM){
+    display: none;
+  }
+  @extend %setup;
+}
+
